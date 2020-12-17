@@ -1,0 +1,402 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.scrollable-container {
+    height: 100%;
+    overflow-y: auto;
+    /*  padding-top: 10px;
+    padding-left: 23px;
+    padding-bottom: 20px; */
+    padding: 10px 23px 20px 23px;
+    box-sizing: border-box;
+}
+
+.scrollable-content {
+    height: 2000px;
+    background-color: #2a79ff;
+}
+
+.scrollable-container-modal {
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.add-row-button {
+    display: block;
+    background: none;
+    border: 1px solid #4262ff;
+    color: #4262ff;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.dice-button {
+    display: inline-block;
+    /* background-image: url("img/test/1d4.svg");
+    background-color: #FFFFFF;
+    */
+    border: none;
+    height: 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 60px;
+    margin: 4px;
+}
+
+.scroll_box {
+    display: block;
+}
+
+.sticker_unique_box {
+    padding-left: 80px;
+    vertical-align: middle;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-weight: bold;
+    height: 20px;
+}
+
+.sticker_unique {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.pseudo {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0 0 0 24px;
+}
+
+.labels {
+    display: inline-block;
+    height: 30px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.labels-d {
+    display: inline-block;
+    height: 30px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.row-username {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 4px 4px 6px;
+    box-sizing: border-box;
+    border-color: #4262ff;
+}
+
+.row-input {
+    display: inline-block;
+    vertical-align: top;
+    width: 55px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 4px 4px 6px;
+    box-sizing: border-box;
+    border-color: #4262ff;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.build-button {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #4262ff;
+    border: 1px solid #4262ff;
+    color: #fff;
+    width: 55px;
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 4px 4px 4px 6px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.delete-button {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    background: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.row-input:hover,
+.row-input:active,
+.delete-button:hover,
+.delete-button:active {
+    border: 1px solid #666;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.d1d4 {
+    background-image: url("img/des/1d4.svg");
+}
+.d1d4:hover {
+    background-image: url("img/des/1d4h.svg");
+}
+
+.d2d4 {
+    background-image: url("img/des/2d4.svg");
+}
+.d2d4:hover {
+    background-image: url("img/des/2d4h.svg");
+}
+
+.d3d4 {
+    background-image: url("img/des/3d4.svg");
+}
+.d3d4:hover {
+    background-image: url("img/des/3d4h.svg");
+}
+
+.d4d4 {
+    background-image: url("img/des/4d4.svg");
+}
+.d4d4:hover {
+    background-image: url("img/des/4d4h.svg");
+}
+
+.d1d6 {
+    background-image: url("img/des/1d6.svg");
+}
+.d1d6:hover {
+    background-image: url("img/des/1d6h.svg");
+}
+
+.d2d6 {
+    background-image: url("img/des/2d6.svg");
+}
+.d2d6:hover {
+    background-image: url("img/des/2d6h.svg");
+}
+
+.d3d6 {
+    background-image: url("img/des/3d6.svg");
+}
+.d3d6:hover {
+    background-image: url("img/des/3d6h.svg");
+}
+
+.d4d6 {
+    background-image: url("img/des/4d6.svg");
+}
+.d4d6:hover {
+    background-image: url("img/des/4d6h.svg");
+}
+
+.d1d8 {
+    background-image: url("img/des/1d8.svg");
+}
+.d1d8:hover {
+    background-image: url("img/des/1d8h.svg");
+}
+
+.d2d8 {
+    background-image: url("img/des/2d8.svg");
+}
+.d2d8:hover {
+    background-image: url("img/des/2d8h.svg");
+}
+
+.d3d8 {
+    background-image: url("img/des/3d8.svg");
+}
+.d3d8:hover {
+    background-image: url("img/des/3d8h.svg");
+}
+
+.d4d8 {
+    background-image: url("img/des/4d8.svg");
+}
+.d4d8:hover {
+    background-image: url("img/des/4d8h.svg");
+}
+
+.d1d10 {
+    background-image: url("img/des/1d10.svg");
+}
+.d1d10:hover {
+    background-image: url("img/des/1d10h.svg");
+}
+
+.d2d10 {
+    background-image: url("img/des/2d10.svg");
+}
+.d2d10:hover {
+    background-image: url("img/des/2d10h.svg");
+}
+
+.d3d10 {
+    background-image: url("img/des/3d10.svg");
+}
+.d3d10:hover {
+    background-image: url("img/des/3d10h.svg");
+}
+
+.d4d10 {
+    background-image: url("img/des/4d10.svg");
+}
+.d4d10:hover {
+    background-image: url("img/des/4d10h.svg");
+}
+
+.d1d12 {
+    background-image: url("img/des/1d12.svg");
+}
+.d1d12:hover {
+    background-image: url("img/des/1d12h.svg");
+}
+
+.d2d12 {
+    background-image: url("img/des/2d12.svg");
+}
+.d2d12:hover {
+    background-image: url("img/des/2d12h.svg");
+}
+
+.d3d12 {
+    background-image: url("img/des/3d12.svg");
+}
+.d3d12:hover {
+    background-image: url("img/des/3d12h.svg");
+}
+
+.d4d12 {
+    background-image: url("img/des/4d12.svg");
+}
+.d4d12:hover {
+    background-image: url("img/des/4d12h.svg");
+}
+
+.d1d20 {
+    background-image: url("img/des/1d20.svg");
+}
+.d1d20:hover {
+    background-image: url("img/des/1d20h.svg");
+}
+
+.d2d20 {
+    background-image: url("img/des/2d20.svg");
+}
+.d2d20:hover {
+    background-image: url("img/des/2d20h.svg");
+}
+
+.d3d20 {
+    background-image: url("img/des/3d20.svg");
+}
+.d3d20:hover {
+    background-image: url("img/des/3d20h.svg");
+}
+
+.d4d20 {
+    background-image: url("img/des/4d20.svg");
+}
+.d4d20:hover {
+    background-image: url("img/des/4d20h.svg");
+}
+
+.d1d100 {
+    background-image: url("img/des/1d100.svg");
+}
+.d1d100:hover {
+    background-image: url("img/des/1d100h.svg");
+}
+
+.d2d100 {
+    background-image: url("img/des/2d100.svg");
+}
+.d2d100:hover {
+    background-image: url("img/des/2d100h.svg");
+}
+
+.d3d100 {
+    background-image: url("img/des/3d100.svg");
+}
+.d3d100:hover {
+    background-image: url("img/des/3d100h.svg");
+}
+
+.d4d100 {
+    background-image: url("img/des/4d100.svg");
+}
+.d4d100:hover {
+    background-image: url("img/des/4d100h.svg");
+}
+
+#containerDice {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 32px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding-left: 32px;
+    margin-bottom: 32px;
+}
+
+.draggable-item {
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.image-box img {
+    max-width: 60px;
+    max-height: 60px;
+    cursor: pointer;
+}

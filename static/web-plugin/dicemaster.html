@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="scrollable-container">
+        <div class="scroll_box">
+            <div id="lang" style="text-align:center">
+                <span type="button" data-value="fr">🇫🇷</span> <span type="button" data-value="en">🇬🇧</span>
+            </div>
+            <div class="sticker_unique_box">
+                <div class="sticker_unique">
+                    <input type="checkbox" id="sticker_unique" />
+                </div>
+                <div class="sticker_unique">
+                    <span data-i18n="header.unique"></span>
+                </div>
+            </div>
+        </div>
+        <div class="pseudo">
+            <span class="labels" data-i18n="header.username"></span>
+            <input type="text" id="username" class="row-username" />
+        </div>
+        <div class="pseudo">
+            <input type="number" id="nombreDes" class="row-input" value="1" min="1" />
+            <span class="labels-d">d</span>
+            <input type="number" id="typeDes" class="row-input" value="4" min="1" />
+            <button id="lancerDes" class="build-button">Roll</button>
+        </div>
+        <div id="container"></div>
+    </div>
+
+    <script type="text/javascript" src="https://miro.com/app/static/sdk.1.1.js"></script>
+    <script type="text/javascript" src="./js/dicemaster.js"></script>
+</body>
+
+</html>
